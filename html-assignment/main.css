@@ -5,7 +5,7 @@ body {
  header, footer{
 background-color: rgb(178, 247, 247);
  }   
- header h1 {
+ header h1 .blue-text{
     color: rgb(76, 0, 255);
 }
 #my-image {
