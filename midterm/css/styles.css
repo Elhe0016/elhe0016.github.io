@@ -1,0 +1,103 @@
+html{
+    scroll-behavior: smooth;
+}
+.wrapper{
+    width:960px;
+    max-width: 960px;
+    background-color: #dafcf7;
+    padding-left: 10px;
+    margin:auto;
+    min-width: 600px;
+    padding-bottom: 2px;
+}
+
+
+body{
+    margin-top:0px;
+    font-family: Helvetica;
+    margin-bottom: 0;
+    background-color: #aad4cf;
+
+}
+
+/**this is the header background **/
+.header{
+    position: relative;
+    max-width: 960px;
+    margin:0 auto; 
+}
+img{
+    width: 100%;
+    padding-left: 0;
+    height:100%;
+}
+.yayo{
+    color:white;
+    position:absolute;
+    top: 150px;
+    left: 16px;
+    display:block;
+    width:100%;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+/**Navigation bar**/
+nav ul li{
+display: inline-block;
+width: 32%; 
+text-align:center;
+font-weight: bold;
+}
+.story{
+border-right-style:groove;
+border-right-color: grey;
+border-right-width: 1px;
+border-left-style:groove;
+border-left-color: grey;
+border-left-width: 1px;  
+}
+/**Article**/
+.starfish img{
+    width: 200px;
+    height: 200px;
+    float:left;
+    padding-right: 10px;
+}
+
+ul{
+   padding-left: 10pt;
+    font-size: small;
+    line-height: 0.9;
+}
+
+.visitlearn{
+    font-size:medium;
+    margin-right: 5px;
+    border-style:solid;
+    border-width: 1px;
+}
+
+.learnmore{
+    margin: 10px;    
+}
+.learnmore input{
+    width:100%;
+    border:0ch;
+}
+textarea{
+    width:100%;
+    border-color:rgb(184, 181, 181);
+}
+.visit{
+    margin-left:10px;    
+
+}
+button{
+    margin: 5px;;
+    background-color: #dafcf7;
+}
+
+footer{
+    text-align:right;
+}
