@@ -1,4 +1,38 @@
+/** {
+    box-sizing: border-box;
+    max-width: 1200px;
+}
 body {
-    background-color: aqua;
+    margin: 0;
+    background-color: white;
     font-family: 'Open Sans', sans-serif;
 }
+.wrapper {
+    margin:0;
+
+}
+header{
+    background-color: #222;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+@media screen & min-width (760) {
+    
+.aboutus {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    background-color: red;
+}
+
+.teamwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+}*/
