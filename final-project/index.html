@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.png" alt="logo">
+    <header> <!--create a responsive nav bar for desktop and mobile-->
+        <img src="images/logo.png" class="logo" alt="logo">
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -30,25 +30,28 @@
             
         </nav>
     </header>
-    <div class="wrapper">
-        <div class="main-banner">
+    
+    <div class="main-banner">
             <img src="images/main-banner.jpg" alt="main-banner">
+            <div class="mainbannertext">
             <h1> Welcome to Three Star Media</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, placeat quia? Eum consectetur doloremque dolorem assumenda distinctio sequi labore, libero, veniam temporibus natus dolore reiciendis molestiae autem consequatur, nemo eos?</p>
             <button type="button">Connect with us 
             <i class="fa-solid fa-play"></i>
-        </button>
+            </button>
         </div>
-
-    <div class="wrapper">
-        <div class="aboutus">
+    </div>
+        
+    <div class="wrapper"> <!-- wraps sections from about us up to the footer-->
+            <div class="about"> <!-- classes defined to be used in the flex display-->
             <img src="images/about-us.jpg" alt="about-us">
             <h2> About Us </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, placeat quia? Eum consectetur doloremque dolorem assumenda distinctio sequi labore, libero, veniam temporibus natus dolore reiciendis molestiae autem consequatur, nemo eos?</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum rerum sint, nobis similique eos mollitia itaque! Mollitia ducimus est laudantium, ut laborum ratione maiores sit neque itaque fuga corrupti dolores?    
             </p>
-        </div>
-
+            </div>
+        
+    <div class="container"> <!--classes are defined to help in creating grid display-->
 
         <div class="Services">
             <h1> Our Services </h1>
@@ -57,7 +60,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, placeat quia? Eum consectetur doloremque dolorem assumenda distinctio sequi labore, libero, veniam temporibus natus dolore reiciendis molestiae autem consequatur, nemo eos?</p>
             <button type="button">Digital Plans 
             <i class="fa-solid fa-play"></i>
-        </button>
+            </button>
         </div>
 
         <div class="Marketing">
@@ -66,9 +69,8 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, placeat quia? Eum consectetur doloremque dolorem assumenda distinctio sequi labore, libero, veniam temporibus natus dolore reiciendis molestiae autem consequatur, nemo eos?</p>
             <button type="button">Marketing Plans 
             <i class="fa-solid fa-play"></i>
-        </button>
+            </button>
         </div>
-
 
         <div class="Video">
             <img src="images/video.jpg" alt="video">
@@ -76,7 +78,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, placeat quia? Eum consectetur doloremque dolorem assumenda distinctio sequi labore, libero, veniam temporibus natus dolore reiciendis molestiae autem consequatur, nemo eos?</p>
             <button type="button">Video Plans 
             <i class="fa-solid fa-play"></i>
-        </button>
+            </button>
         </div>
 
         <div class="Webdevelopment">
@@ -85,9 +87,8 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, placeat quia? Eum consectetur doloremque dolorem assumenda distinctio sequi labore, libero, veniam temporibus natus dolore reiciendis molestiae autem consequatur, nemo eos?</p>
             <button type="button">Web Plans 
             <i class="fa-solid fa-play"></i>
-        </button>
+            </button>
         </div>
-
 
         <div class="print">
             <img src="images/print.jpg" alt="print">
@@ -95,7 +96,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, placeat quia? Eum consectetur doloremque dolorem assumenda distinctio sequi labore, libero, veniam temporibus natus dolore reiciendis molestiae autem consequatur, nemo eos?</p>
             <button type="button">Print Plans 
             <i class="fa-solid fa-play"></i>
-        </button>
+            </button>
         </div>
     </div>
     
@@ -113,17 +114,17 @@
         <h1> Our Team </h1>    
             <img src="images/john.jpg" alt="john">
         </div>
-        <div class="team">
+        <div class="john">
             <h3>John Doe</h3>
             <h4>CEO and Co-owner</h4>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem dolor maxime, voluptas nemo soluta vero eum. Iste itaque aliquid quae blanditiis sint recusandae corrupti non. Voluptatem eos ipsum ad cupiditate.</p>
         </div>
-        <div class="team">
+        <div class="bob">
             <h3>Bob Rite</h3>
             <h4>CFO and Co-owner</h4>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem dolor maxime, voluptas nemo soluta vero eum. Iste itaque aliquid quae blanditiis sint recusandae corrupti non. Voluptatem eos ipsum ad cupiditate.</p>
         </div>
-        <div class="team">
+        <div>
             <img src="images/bob.jpg" alt="bob">
         </div>
     </div>
@@ -169,14 +170,14 @@
          </tr>
      </tbody>
     </table>
+    
     <section class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d358904.92640412407!2d-76.03508816718752!3d45.3499278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1648779402357!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
     </section>
-
+</div>
 <footer> 
     <p> &copy; Copywrite Three Star Media, 2020 </p> 
     <p>All images are taken from Unsplash</p>
 </footer>
-</div>
 </body>
 </html>
