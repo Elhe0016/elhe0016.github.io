@@ -1,0 +1,291 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    max-width: 1200px;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    color:#222;
+    font-size: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bolder;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+
+h1 {font-size: 4rem}
+h2 {font-size: 3rem}
+h3 {font-size: 2rem}
+
+
+
+p{
+    margin-left: 20px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+}
+
+header{
+background-color: #222;
+}
+.a {
+    margin-left: 18px;
+    margin-right:18px;
+    background-color: #c78c06;
+}
+.logo{
+    width: 195px;
+    height: 220px;
+    padding-left: 20px;
+}
+
+.home a {
+    color:#222;
+}
+
+.home {    
+    background-color: #c78c06;
+    display:flex;
+    width: 97%;
+    justify-content: center;
+    font-weight: bold;
+}
+
+nav ul {
+display: flex;
+align-items: center;
+justify-content:space-between;
+flex-direction: column;
+width: 100%;
+height: 70px;
+text-align: center;
+min-height: 500px;
+}
+
+header a{
+color: #c78c06;
+text-decoration: none;
+list-style-type: none;
+font-weight: bold;
+text-align: center;
+}
+
+button {
+    background-color: #222;
+    color: white;
+    font-size: 30px;
+    padding: 40px;
+    margin: 20px;
+}
+.name, .position{
+    margin-left: 10px;
+    margin-top: 2px;
+}
+.position{
+    border-bottom: #c78c06;
+    border-width: 5px;
+}
+nav input[type=text]{
+    justify-content: left;
+    width: 90%;
+    height: 50px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-top:50px;
+    font-size: 20px;     
+}
+i {
+    padding-left: 6px;
+}
+nav i {
+    color:#c78c06;
+    border-style:solid;
+    border-width: 1px;
+    border-color:#c78c06; 
+    }
+    
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+
+.main-banner {  
+    width: 100%;
+    height:100%;
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+.mainbannertext {
+    color:white;
+    background-color: #222;
+    opacity: 80%;
+     align-items: center;
+     width: 100%; 
+}
+
+.bannerbutton{
+    color:#222;
+    background-color: #c78c06;
+    font-size: 30px;
+    padding: 40px;
+    margin: 20px;
+}
+.about img{
+    margin: 20px;
+    width: 97%;
+}
+
+.vision {
+    color:white;
+    padding:50px;
+    margin-left:-50px;
+    background-image: url(../images/vision.jpg);
+    background-size: cover;
+    width: 110%;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.visionbutton {
+    border:#c78c06 solid 1px;
+}
+
+.about, .container, .vision, .team, .wrapper{
+    background-color: #ffe6ac;
+}
+hr {
+    border-style: solid;
+    color:#c78c06;
+    margin-top:0;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+input[type=text], [type=email], textarea {
+    width: 100%; 
+    padding: 12px;
+    border-radius: 8px; 
+    border-style:ridge;
+    box-sizing: border-box; 
+    margin-top: 10px; 
+    margin-bottom: 16px; 
+    height: 70px;
+  }
+textarea{
+    height: 300px;
+}
+
+.send {
+    font-size: 30px;
+    color:#c78c06;
+    background-color: #222;
+}
+table {
+    width:100%;
+    text-align: center;
+}
+table, th, td {
+    border: 1px solid;
+    height: 100px;
+    padding-top: 30px;
+}
+
+th {
+    background-color: #ffe6ac;
+    font-weight: bold;
+}
+
+.maps iframe {width: 100%;
+            height: 600px;
+            border: 0;
+}
+
+footer{
+    color: #c78c06;
+    background-color: #222;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+/*
+
+@media screen & (min-width 760) {
+ 
+    nav ul {
+        display:flex;
+        justify-content: space-between;
+        text-align: center;   
+.aboutus {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    background-color: red;
+}
+
+.teamwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
