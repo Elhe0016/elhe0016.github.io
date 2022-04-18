@@ -17,10 +17,11 @@
 
 <body>
     <header> <!--create a responsive nav bar for desktop and mobile-->
-        <div class="a">
-        <img src="images/logo.png" class="logo" alt="logo">
-    </div>
         <nav>
+        <div class="a">
+        <img class="logo" src="images/logo.png" alt="logo">
+        </div>
+        
             <ul>
                 <li class="home"><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
@@ -28,11 +29,14 @@
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-                <input type="text" placeholder="Search">      
-                <i class="fa-solid fa-magnifying-glass"></i>   
+            <div class="searchbar">
+            <input type="text" placeholder="Search">      
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>   
         </nav>
+    </section>
 
-    </header>
+</header>
     <div class="wrapper"> <!-- wraps sections from about us up to the footer-->
 
     <div class="main-banner">
@@ -48,20 +52,22 @@
         
             <div class="about"> <!-- classes defined to be used in the flex display-->
             <img src="images/about-us.jpg" alt="about-us">
+            <div class="abouttext">
             <h1> About Us </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, placeat quia? Eum consectetur doloremque dolorem assumenda distinctio sequi labore, libero, veniam temporibus natus dolore reiciendis molestiae autem consequatur, nemo eos?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum rerum sint, nobis similique eos mollitia itaque! Mollitia ducimus est laudantium, ut laborum ratione maiores sit neque itaque fuga corrupti dolores?    
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, placeat quia? </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum rerum sint, nobis similique eos mollitia itaque!Illum rerum sint, nobis similique eos mollitia itaque!     
             </p>
             </div>
+        </div>
     </div>    
 
-        <div class="Services">
+        <div class="services">
             <h1> Our Services </h1>
         </div>
 
     <div class="container"> <!--classes are defined to help in creating grid display-->
 
-        <div class="digitaltransformation">
+        <div class="digital">
             <img src="images/digital.jpg" alt="digital">
             <h2>Digital Transformation</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, placeat quia? Eum consectetur doloremque dolorem assumenda distinctio sequi labore, libero, veniam temporibus natus dolore reiciendis molestiae autem consequatur, nemo eos?</p>
@@ -69,29 +75,28 @@
             <i class="fa-solid fa-play"></i>
             </button>
         </div>
-
-        <div class="Marketing">
+        <div class="marketing">
             <img src="images/marketing.jpg" alt="marketing">
             <h2>Marketing</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, placeat quia? Eum consectetur doloremque dolorem assumenda distinctio sequi labore, libero, veniam temporibus natus dolore reiciendis molestiae autem consequatur, nemo eos?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi voluptas ullam iure nostrum, nihil ipsam in qui? Fugiat totam voluptatum similique quo, magnam repudiandae consectetur nobis eaque officia odit? Esse?</p>
             <button type="button">Marketing Plans 
             <i class="fa-solid fa-play"></i>
             </button>
         </div>
 
-        <div class="Video">
+        <div class="video">
             <img src="images/video.jpg" alt="video">
             <h2>Video Production</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, placeat quia? Eum consectetur doloremque dolorem assumenda distinctio sequi labore, libero, veniam temporibus natus dolore reiciendis molestiae autem consequatur, nemo eos?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi voluptas ullam iure nostrum, nihil ipsam in qui? Fugiat totam voluptatum similique quo, magnam repudiandae consectetur nobis eaque officia odit? Esse?</p>
             <button type="button">Video Plans 
             <i class="fa-solid fa-play"></i>
             </button>
         </div>
 
-        <div class="Webdevelopment">
+        <div class="webdevelopment">
             <img src="images/web.jpg" alt="web">
             <h2>Web Development</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, placeat quia? Eum consectetur doloremque dolorem assumenda distinctio sequi labore, libero, veniam temporibus natus dolore reiciendis molestiae autem consequatur, nemo eos?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi voluptas ullam iure nostrum, nihil ipsam in qui? Fugiat totam voluptatum similique quo, magnam repudiandae consectetur nobis eaque officia odit? Esse?</p>
             <button type="button">Web Plans 
             <i class="fa-solid fa-play"></i>
             </button>
@@ -100,7 +105,7 @@
         <div class="print">
             <img src="images/print.jpg" alt="print">
             <h2>Print</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, placeat quia? Eum consectetur doloremque dolorem assumenda distinctio sequi labore, libero, veniam temporibus natus dolore reiciendis molestiae autem consequatur, nemo eos?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi voluptas ullam iure nostrum, nihil ipsam in qui? Fugiat totam voluptatum similique quo, magnam repudiandae consectetur nobis eaque officia odit? Esse? Fugiat totam voluptatum similique quo</p>
             <button type="button">Print Plans 
             <i class="fa-solid fa-play"></i>
             </button>
@@ -118,28 +123,33 @@
     <div class="teamwrapper">
         <h1> Our Team </h1>    
 
-        <div class="team">
+        <div class="john">
             <img src="images/john.jpg" alt="john">
-                <div class="john">
+        </div>
+            <div class="johntext">
             <h2 class="name">John Doe</h2>
             <h3 class="position">CEO and Co-owner</h3>
             <hr>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem dolor maxime, voluptas nemo soluta vero eum. Iste itaque aliquid quae blanditiis sint recusandae corrupti non. Voluptatem eos ipsum ad cupiditate.</p>
         </div>
-        <div class="team">
+
+        <div class="bob">
             <img src="images/bob.jpg" alt="bob">
+        </div>    
+            <div class="bobtext">
             <h2 class="name">Bob Rite</h2>
             <h3 class="position">CFO and Co-owner</h3>
             <hr>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem dolor maxime, voluptas nemo soluta vero eum. Iste itaque aliquid quae blanditiis sint recusandae corrupti non. Voluptatem eos ipsum ad cupiditate.</p>
         </div>
-        </div>
+        
+    </div>
         <div>
         </div>
     </div>
-
-    <div class="contactcontainer">
-        <h1>Contact Us</h1>
+<section class="secondwrapper">
+        <h1 class="contactheader">Contact Us</h1>
+        <div class="contactcontainer">
         <h2> Send us a message</h2>
         <form action="contactus" method="get">
          <div>
@@ -159,9 +169,9 @@
         </div>
         </form>
     </div>
-
-    <table>
-     <div>
+    <div class="hoursofoperation">
+    <table class="hours">
+     
          <h2>Hours of Operation</h2>
      </div> 
 
@@ -182,11 +192,12 @@
          </tr>
      </tbody>
     </table>
-    
+</div>
     <section class="maps">
         <h1> Location </h1>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d358904.92640412407!2d-76.03508816718752!3d45.3499278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1648779402357!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
     </section>
+</section>
 </div>
 </body>
 
