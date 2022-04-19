@@ -8,8 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
-
     <script src="https://kit.fontawesome.com/99d246f297.js" crossorigin="anonymous"></script>
 
     <link href="css/styles.css" rel="stylesheet">
@@ -18,55 +16,51 @@
 <body>
     <header> <!--create a responsive nav bar for desktop and mobile-->
         <nav>
-        <div class="a">
-        <img class="logo" src="images/logo.png" alt="logo">
+        <div class="navbar">
+            <img class="logo" src="images/logo.png" alt="logo">
         </div>
-        
-            <ul>
-                <li class="home"><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div class="searchbar">
+        <ul>
+            <li class="home"><a href="#">Home</a></li>
+            <li class="aboutnav"><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="searchbar">
             <input type="text" placeholder="Search">      
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>   
         </nav>
-    </section>
-
-</header>
+    </header>
+    
     <div class="wrapper"> <!-- wraps sections from about us up to the footer-->
-
     <div class="main-banner">
-            <div class="mainbannertext">
+        
+        <div class="mainbannertext">
             <h1> Welcome to Three Star Media</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, placeat quia? Eum consectetur doloremque dolorem assumenda distinctio sequi labore, libero, veniam temporibus natus dolore reiciendis molestiae autem consequatur, nemo eos?</p>
-            <button class="bannerbutton" button type="button">Connect with us 
+        </div>    
+            <div class="bannerbutton"> <!-- class is defined to enable special formatting to this button-->
+            <button type="button">Connect with us 
             <i class="fa-solid fa-play"></i>
             </button>
-        </div>
-        
+            </div>     
     </div>
         
-            <div class="about"> <!-- classes defined to be used in the flex display-->
-            <img src="images/about-us.jpg" alt="about-us">
-            <div class="abouttext">
+    <div class="about"> <!-- class is defined to be used in the flex display-->
+        <img src="images/about-us.jpg" alt="about-us">
+        <div class="abouttext">
             <h1> About Us </h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, placeat quia? </p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum rerum sint, nobis similique eos mollitia itaque!Illum rerum sint, nobis similique eos mollitia itaque!     
             </p>
-            </div>
         </div>
     </div>    
-
         <div class="services">
             <h1> Our Services </h1>
         </div>
 
-    <div class="container"> <!--classes are defined to help in creating grid display-->
-
+    <div class="container"> <!--class is defined to help in creating grid display-->
         <div class="digital">
             <img src="images/digital.jpg" alt="digital">
             <h2>Digital Transformation</h2>
@@ -83,7 +77,6 @@
             <i class="fa-solid fa-play"></i>
             </button>
         </div>
-
         <div class="video">
             <img src="images/video.jpg" alt="video">
             <h2>Video Production</h2>
@@ -92,7 +85,6 @@
             <i class="fa-solid fa-play"></i>
             </button>
         </div>
-
         <div class="webdevelopment">
             <img src="images/web.jpg" alt="web">
             <h2>Web Development</h2>
@@ -101,7 +93,6 @@
             <i class="fa-solid fa-play"></i>
             </button>
         </div>
-
         <div class="print">
             <img src="images/print.jpg" alt="print">
             <h2>Print</h2>
@@ -112,76 +103,71 @@
         </div>
     </div>
     
-    <div class="vision">
-        <h2>Our Vision</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi voluptas ullam iure nostrum, nihil ipsam in qui? Fugiat totam voluptatum similique quo, magnam repudiandae consectetur nobis eaque officia odit? Esse?</p>
-        <button class="visionbutton" button type="button">Learn More 
-            <i class="fa-solid fa-play"></i>
-        </button>
-    </div>
-
-    <div class="teamwrapper">
-        <h1> Our Team </h1>    
-
-        <div class="john">
-            <img src="images/john.jpg" alt="john">
-        </div>
-            <div class="johntext">
-            <h2 class="name">John Doe</h2>
-            <h3 class="position">CEO and Co-owner</h3>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem dolor maxime, voluptas nemo soluta vero eum. Iste itaque aliquid quae blanditiis sint recusandae corrupti non. Voluptatem eos ipsum ad cupiditate.</p>
-        </div>
-
-        <div class="bob">
-            <img src="images/bob.jpg" alt="bob">
-        </div>    
-            <div class="bobtext">
-            <h2 class="name">Bob Rite</h2>
-            <h3 class="position">CFO and Co-owner</h3>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem dolor maxime, voluptas nemo soluta vero eum. Iste itaque aliquid quae blanditiis sint recusandae corrupti non. Voluptatem eos ipsum ad cupiditate.</p>
+        <div class="vision">
+            <h2>Our Vision</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi voluptas ullam iure nostrum, nihil ipsam in qui? Fugiat totam voluptatum similique quo, magnam repudiandae consectetur nobis eaque officia odit? Esse?</p>
+            <div class="visionbutton"> <!-- class is defined to enable special formatting to this button-->
+                <button type="button">Learn More 
+                <i class="fa-solid fa-play"></i>
+            </button>
+            </div>
         </div>
         
-    </div>
-        <div>
+        <div class="teamwrapper"> <!--classes in this sections are defined to help in creating grid areas-->
+            <h1> Our Team </h1>    
+            <div class="john">
+                <img src="images/john.jpg" alt="john">
+            </div>
+                <div class="johntext">
+                <h2 class="name">John Doe</h2>
+                <h3 class="position">CEO and Co-owner</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem dolor maxime, voluptas nemo soluta vero eum. Iste itaque aliquid quae blanditiis sint recusandae corrupti non. Voluptatem eos ipsum ad cupiditate.</p>
+                </div>
+            
+            <div class="bob">
+                <img src="images/bob.jpg" alt="bob"> 
+            </div>
+                <div class="bobtext">
+                <h2 class="name">Bob Rite</h2>
+                <h3 class="position">CFO and Co-owner</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem dolor maxime, voluptas nemo soluta vero eum. Iste itaque aliquid quae blanditiis sint recusandae corrupti non. Voluptatem eos ipsum ad cupiditate.</p>
+                </div>
         </div>
-    </div>
-<section class="secondwrapper">
+    <div class="secondwrapper"> <!--classes in this sections are defined to help in creating grid areas-->
         <h1 class="contactheader">Contact Us</h1>
         <div class="contactcontainer">
         <h2> Send us a message</h2>
         <form action="contactus" method="get">
-         <div>
-         <label for ="name">First Name</label>
-         <input type="text" id="name">
+        <div>
+            <label for ="name">First Name</label>
+            <input type="text" id="name">
         </div>   
         <div>
-         <label for="email">Email</label> 
-         <input type="email" id="email">
+            <label for="email">Email</label> 
+            <input type="email" id="email">
         </div>
         <div>
-         <label for="message">Message</label>
-         <textarea id="message"></textarea>
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
         </div>
-        <div>
-        <input class="send" input type="submit" value="Send">
-        </div>
+        <div class="sendbutton">
+        <input type="submit" value="Send">
+        </div>    
         </form>
     </div>
-    <div class="hoursofoperation">
+    <div class="hoursofoperation"> <!-- class defined to be able to add it to the grid areas on its own at a row-->
+        <h2>Hours of Operation</h2>    
+    </div> 
     <table class="hours">
-     
-         <h2>Hours of Operation</h2>
-     </div> 
-
-     <thead>
+    <thead>
          <tr>
              <th>Days</th>
              <th>Hours</th>
          </tr>
-     </thead>  
-     <tbody>
+    </thead>  
+    <tbody>
          <tr>
              <td> Monday-Friday</td>
              <td>9 Am - 6 PM </td>
@@ -190,20 +176,18 @@
             <td> Saturday - Sunday </td>
             <td> Closed</td>
          </tr>
-     </tbody>
+    </tbody>
     </table>
-</div>
+
     <section class="maps">
         <h1> Location </h1>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d358904.92640412407!2d-76.03508816718752!3d45.3499278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1648779402357!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
     </section>
-</section>
-</div>
+    </div>
+    </div>    
+    <footer> 
+        <p> &copy; Copywrite Three Star Media, 2020 </p> 
+        <p>All images are taken from Unsplash</p>
+    </footer>
 </body>
-
-<footer> 
-    <p> &copy; Copywrite Three Star Media, 2020 </p> 
-    <p>All images are taken from Unsplash</p>
-</footer>
-
 </html>

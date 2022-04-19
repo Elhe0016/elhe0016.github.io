@@ -59,7 +59,7 @@ body {
     color:#222;
     font-size: 20px;
 }
-
+/* Margin and padding are added since I reset the stylesheet formats*/
 h1, h2, h3, h4, h5, h6 {
     font-weight: bolder;
     margin-top: 50px;
@@ -71,31 +71,34 @@ h1 {font-size: 3rem}
 h2 {font-size: 2rem}
 h3 {font-size: 1rem}
 
-
 p{
     margin-left: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     margin-right: 20px;
+    font-size: 18px;
 }
 
 header{
 background-color: #222;
 }
-
-.a {
+/* the Navigation bar is vertical on the mobile screen and horizantal on the desktop screen*/
+.navbar {
     margin-left: 18px;
     margin-right:18px;
     background-color: #c78c06;
     width: 98%;
 }
+
 .logo{
     width: 195px;
-    height: 220px;
-    padding-left: 20px;
+    height: 195px;
+    padding-top: 30px;
 }
 
+/* change the home nav background as a block and black text*/
 .home a {
     color:#222;
+    margin-bottom: 50px;
 }
 
 .home {    
@@ -107,6 +110,9 @@ background-color: #222;
     font-weight: bold;
 }
 
+.aboutnav { margin-top: -50px }
+
+/*Create vertical (column) nav for mobile screen*/
 nav ul {
 display: flex;
 align-items: center;
@@ -116,15 +122,15 @@ width: 100%;
 text-align: center;
 min-height: 500px;
 }
-
-header a{
+header a {
 color: #c78c06;
 text-decoration: none;
 list-style-type: none;
 font-weight: bold;
 text-align: center;
-font-size: 30px;}
-
+font-size: 30px;
+}
+/* to stretch the search bar to align with the vertical nav on the mobile screen*/
 nav input[type=text]
 {
     justify-content: left;
@@ -135,6 +141,7 @@ nav input[type=text]
     margin-top:50px;
     font-size: 20px;     
 }
+
 i {
     padding-left: 6px;
 }
@@ -145,24 +152,25 @@ button {
     padding: 40px;
     margin: 20px;
 }
-.name, .position{
+
+.name, .position {
     margin-left: 10px;
     margin-top: 2px;
 }
-.position{
+
+.position {
     border-bottom: #c78c06;
     border-width: 5px;
 }
-
+/*to format the magnifying lens in the nav bar*/
 nav i {
     color:#c78c06;
     border-style:solid;
     border-width: 1px;
     border-color:#c78c06;
     font-size: 30px;
-padding: 10px;    }
-    
-
+    padding: 10px;    
+}
 
 img {
     max-width: 100%;
@@ -170,36 +178,40 @@ img {
     width: 100%;
 }
 
-
 .main-banner {  
-    width: 100%;
-    height:100%;
     background-image: url(../images/main-banner.jpg);
     background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 200px;
+    padding-top: 50px;
+    padding-bottom:130px;
 }
+/* used to add overlay text on background-img*/
 .mainbannertext {
     color:white;
     background-color: #222;
     opacity: 80%;
-     align-items: center;
-     width: 100%; 
+    align-items: center;
+    padding: 20px;
+    padding-bottom:170px;
 }
 
-.bannerbutton{
+/* changes the color and size of the button on the mainbanner only*/
+.bannerbutton button{
     color:#222;
     background-color: #c78c06;
-    font-size: 30px;
-    padding: 40px;
-    margin: 20px;
+    font-size: 20px;
+    padding: 30px;
+    margin-left: 90px;
+    position:absolute;
+    margin-top: -150px;
+    width: 300px;
 }
+/* changes the size of about us image only since all the other images are full width*/
 .about img{
     margin: 20px;
     margin-bottom: 0;
     width: 95%;
 }
-
+/* changes the vision size and alignment*/
 .vision {
     color:white;
     padding:50px;
@@ -211,17 +223,28 @@ img {
     background-repeat: no-repeat;
 }
 
-.visionbutton {
+.visionbutton button{
     border:#c78c06 solid 1px;
+    width:200px;
 }
 
+/*adds background color to the following divs*/
 .about, .container, .vision, .john, .bob{
     background-color: #ffe6ac;
 }
-
 .wrapper{
     background-color: white;
 }
+
+
+.johntext {
+    background-color: #ffe6ac;
+}
+
+.bobtext {
+    background-color: #ffe6ac;
+}
+/*adds a vertical line*/
 hr {
     border-style: solid;
     color:#c78c06;
@@ -229,7 +252,7 @@ hr {
     margin-left: 15px;
     margin-right: 15px;
 }
-
+/*formats the contact-us form*/
 input[type=text], [type=email], textarea {
     width: 95%; 
     padding: 12px;
@@ -240,19 +263,23 @@ input[type=text], [type=email], textarea {
     margin-bottom: 16px; 
     height: 70px;
   }
+
 textarea{
     height: 300px;
 }
 
-.send {
-    font-size: 30px;
+.sendbutton input {
+    font-size: 20px;
     color:#c78c06;
     background-color: #222;
 }
+
+/*formats the hours of operation table*/
 table {
     width:100%;
     text-align: center;
 }
+
 table, th, td {
     border: 1px solid;
     height: 100px;
@@ -274,19 +301,20 @@ footer{
     background-color: #222;
     padding-top: 50px;
     padding-bottom: 10px;
+    font-size: 20px;
 }
-
 
 
 @media screen and (min-width: 760px)
 {
-
     body {
         width: 760px;
         font-size: 14px;
-
     }
+    /*reduces the margin in desktop screen to make it appealing*/
     h1, h2 {margin-top: 20px}
+    
+    /*flex used to align the nav list horizantally on the desktop screen*/
     nav ul {
         all: unset;
         display:flex;
@@ -295,17 +323,25 @@ footer{
         list-style-type: none;
         width:400px;   
      }
-     .home {width:50px; margin-top:-10px;}
-     .a {
-        all: unset; 
-    }
-    .logo {
-        margin: 10px;
-        width:75px;
-        height:75px;
-    }
-    header a{font-size: 15px; padding:10px; text-align: center;}
 
+     .home {width:50px; margin-top:-10px; height:50px}
+     /*resets the top margin of about nav on the desktop version*/
+     
+     .aboutnav { margin-top: 0px }
+
+     /* to reset the previous formatting*/
+    .navbar {all: unset;}
+
+    .logo {
+        width:150px;
+        height:150px;
+        padding-left:50px;
+        padding-bottom: 20px;
+    }
+
+header a{font-size: 15px; padding:10px; text-align: center;}
+    
+/* to reduce the size of the search bar to fit the horizantal navbar on desktop*/
     nav input[type=text]{
         width: auto;
         height: auto;
@@ -313,7 +349,7 @@ footer{
         margin-top:50px;
         font-size: 10px;
     }
-
+/*creates responsive nav bar*/
 nav {
     display: flex;
     justify-content: space-between;
@@ -322,21 +358,25 @@ nav {
     width: 125%;
     background-color: #222;
 }
-nav i {margin-right: 5px; margin-left:0; font-size:10px;}
-.main-banner {    margin-left:-100px;
-    width: 125%;}
-.mainbannertext {
+
+nav i {margin-right: 50px; margin-left:0; font-size:20px;}
+.main-banner {    
+    margin-left:-100px;
+    width: 125%;
+}
+
+.mainbannertext 
+{
 margin:auto;
+height: 200%;
 width: 90%;
 }
 
-.bannerbutton{
+.bannerbutton
+{
 width: 350px;
 }
-.about img{
-    all:unset;
-    margin:auto;
-}
+
 .about {
     display: flex;
     flex-direction: row;
@@ -349,27 +389,44 @@ width: 350px;
 .about img{
     width:50%;
     flex:1;
+    margin:auto;
+    padding-bottom: 20px;
 }
+
 .abouttext {
     flex:1;
 }
+/* used grid areas to create Our Services section*/
 
 .container {
     display: grid;
-    background-color: #ffe6ac;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(2,1fr);
+    background-color: white;
     column-gap: 15px;
+    row-gap: 15px;
+    
     grid-template-areas: 
     "digital digital digital  marketing marketing marketing"
     "video video webdevelopment webdevelopment print print";
 }
 
-.digital {grid-area: digital}
-.marketing {grid-area: marketing}
-.video {grid-area: video}
-.webdevelopment {grid-area: webdevelopment}
-.print {grid-area: print}
+.digital {
+    background-color: #ffe6ac;
+    grid-area: digital;
+}
+.marketing {
+    background-color: #ffe6ac;
+    grid-area: marketing}
+.video {
+    background-color: #ffe6ac;
+    grid-area: video}
+.webdevelopment {
+    background-color: #ffe6ac;
+    grid-area: webdevelopment}
+.print {
+    background-color: #ffe6ac;
+    grid-area: print}
 
 button {
 margin-left: 10px;
@@ -383,125 +440,65 @@ padding: 20px;
     width: 125%;
     margin-bottom: 20px;
 }
-
+/*creates grid our team section*/
 .teamwrapper {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    background-color: white;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr 2fr;
     grid-template-areas: 
     "ourteam ourteam"
     "john johntext"
     "bobtext bob";
 }
+
 .teamwrapper h1{ grid-area: ourteam;}
 .john img {
     grid-area: john;
 }
-.johntext {grid-area:johntext;     background-color: #ffe6ac;
+
+.johntext {
+    grid-area:johntext;
+    background-color: #ffe6ac;
 }
-.bobtext {grid-area:bobtext;     background-color: #ffe6ac;
+.bobtext {
+    grid-area:bobtext;
+    background-color: #ffe6ac;
 }
+
 .bob img{
     grid-area:bob;
 }
-*/
+/*size fit to reduct the font size from h1 in moble to h2 in desktop*/
+.maps h1 {font-size: 2rem}
+
+/* different fractions set to keep spaces maintained*/
+/*grid areas used to create this section in desktop and move the hours of operations to the end after the map*/
 .secondwrapper{
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 1fr 4fr 2fr;
+    grid-template-rows: 1fr 5fr 3fr 1fr;
     grid-auto-rows: auto;
     column-gap: 15px;
     grid-template-areas: 
     "contactheader contactheader"
     "contact maps"
     "contact maps"
+    "hoursheader hoursheader"
     "hours hours";
-
 }
- .contactheader {grid-area:contactheader;}
+.contactheader {grid-area:contactheader;}
 .contactcontainer {grid-area:contact}
-.hoursofoperation {grid-area:hours}
+.hoursofoperation {grid-area:hoursheader}
 .maps {grid-area:maps}
+.hours {grid-area: hours}
 }
 
-footer {    margin-left:-100px;
-    width: 125%; height:80px; padding-top: 10px; margin-top:10px}
-/*
-    header{
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-        justify-content: center;
-    }
-
-    .logo {
-        grid-column: 1 /2;
-    }    
-
-    .nav {
-            grid-column: 2-5;
-    }
-
-    nav input[type=text]{
-    grid-column:5 /6} 
-
-
-
-        /*
-        flex-wrap:no-wrap;
-        justify-content: centre;
-        align-items: stretch;     
-    }
-    .logo{
-        width: 150px;
-        height: 200px;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        grid-area: logo;
-    }
-    
-    
-    
-    
-    /*
-    header {
-        height:fit-content;
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "logo navigation search";
-    }
-
-    .logo{
-        width: 150px;
-        height: 200px;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        grid-area: logo;
-    }
-
-    nav ul{
-        grid-area: navigation;
-        color:#c78c06;
-    }
-}
-nav input[type=text]{
-    width: auto;
-    height: auto;
-    margin-bottom: 40px;
-    margin-left: 20px;
-    margin-top:50px;
-    font-size: 20px; 
-    grid-area: search;    
+footer {    
+    margin-left:-100px;
+    width: 125%; height:80px; padding-top: 10px; margin-top:10px;
 }
 
-
-    .a {
-        margin-left: 0px;
-        margin-right:0px;
-        height: 200px;
-        background-color: rgba(34, 34, 34, 0.018);
-    }
-    /*
  
             
 
