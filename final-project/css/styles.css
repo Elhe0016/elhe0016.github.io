@@ -143,10 +143,10 @@ nav input[type=text]
 {
     justify-content: center;
     width: 80%;
-    height: 55px;
+    height: 45px;
     margin-left: 20px;
     border-radius: 0%;
-    padding: 15;
+    padding: 15px;
     margin-top: 18px;
 }
 /*to format the magnifying lens in the nav bar*/
@@ -211,7 +211,7 @@ img {
     width: 300px;
 }
 /* changes the size of about us image only since all the other images are full width*/
-.about img{
+.about img {
     margin: 20px;
     margin-bottom: 0;
     width: 95%;
@@ -228,13 +228,13 @@ img {
     background-repeat: no-repeat;
 }
 
-.visionbutton button{
+.visionbutton button {
     border:#c78c06 solid 1px;
     width:200px;
 }
 
 /*adds background color to the following divs*/
-.about, .container, .vision, .john, .bob{
+.about, .container, .vision {
     background-color: #ffe6ac;
 }
 .wrapper{
@@ -242,12 +242,11 @@ img {
 }
 
 
-.johntext {
-    background-color: #ffe6ac;
+.johntext, .bobtext,  .john, .bob {
+    background-color: #ffe6ac;    
 }
-
-.bobtext {
-    background-color: #ffe6ac;
+.johntext, .bobtext {
+padding-top:10px;
 }
 /*adds a vertical line*/
 hr {
@@ -345,7 +344,11 @@ footer{
         padding-bottom: 20px;
     }
 
-header a{font-size: 15px; padding:10px; text-align: center;}
+header a {
+    font-size: 15px;
+    padding:10px;
+    text-align: center;
+}
     
 /* to reduce the size of the search bar to fit the horizantal navbar on desktop*/
     nav input[type=text]{
