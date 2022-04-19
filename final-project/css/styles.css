@@ -232,6 +232,7 @@ img {
     width: 125%;
     align-items: center;
     background-repeat: no-repeat;
+    margin-top: 50px;
 }
 
 .visionbutton button {
