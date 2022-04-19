@@ -108,6 +108,7 @@ background-color: #222;
     width: 98%;
     justify-content: center;
     font-weight: bold;
+    margin-left: 22px;
 }
 
 .aboutnav { margin-top: -50px }
@@ -327,7 +328,11 @@ footer{
         width:400px;   
      }
 
-     .home {width:50px; margin-top:-10px; height:40px}
+     .home {
+         width:50px; 
+         margin-top:-10px; 
+         height:40px
+        }
      /*resets the top margin of about nav on the desktop version*/
      
      .aboutnav { margin-top: 0px }
