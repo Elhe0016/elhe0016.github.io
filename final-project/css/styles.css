@@ -85,15 +85,14 @@ background-color: #222;
 }
 /* the Navigation bar is vertical on the mobile screen and horizantal on the desktop screen*/
 .navbar {
-    margin-left: 18px;
-    margin-right:18px;
+    margin:auto;
     background-color: #c78c06;
     width: 98%;
 }
 
 .logo{
-    width: 195px;
-    height: 195px;
+    width: 150px;
+    height: 150px;
     padding-top: 30px;
 }
 
@@ -104,7 +103,7 @@ background-color: #222;
 }
 
 .home {    
-    margin-left: 21px;
+    align-items: flex-start;
     background-color: #c78c06;
     display:flex;
     width: 98%;
@@ -200,6 +199,8 @@ img {
     align-items: center;
     padding: 20px;
     padding-bottom:170px;
+    position:relative;
+    width:98%;
 }
 
 /* changes the color and size of the button on the mainbanner only*/
@@ -208,10 +209,11 @@ img {
     background-color: #c78c06;
     font-size: 20px;
     padding: 10px;
-    margin-left: 90px;
     position:absolute;
     margin-top: -150px;
+    margin-left:30px;
     width: 300px;
+    
 }
 /* changes the size of about us image only since all the other images are full width*/
 .about img {
@@ -396,6 +398,7 @@ width: 90%;
 .bannerbutton
 {
 width: 350px;
+margin-left: 70px;
 }
 
 .about {
